@@ -1,0 +1,29 @@
+{
+  "name": "select2-tailwindcss-theme",
+  "version": "1.0.0",
+  "description": "A Select2 theme for Tailwindcss",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erimicel/select2-tailwindcss-theme.git"
+  },
+  "keywords": [
+    "select2",
+    "theme",
+    "select2-theme",
+    "tailwind",
+    "tailwindcss",
+    "css",
+    "scss",
+    "sass"
+  ],
+  "author": "Erim Icel <erimicel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erimicel/select2-tailwindcss-theme/issues"
+  },
+  "homepage": "https://github.com/erimicel/select2-tailwindcss-theme#readme"
+}
