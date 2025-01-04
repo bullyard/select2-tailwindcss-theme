@@ -2,9 +2,9 @@
   "name": "select2-tailwindcss-theme",
   "version": "1.0.0",
   "description": "A Select2 theme for Tailwindcss",
-  "main": "",
+  "main": "dist/select2-tailwindcss-theme.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "sass src/select2-tailwindcss-theme.scss dist/select2-tailwindcss-theme.css && postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme.css --verbose"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,10 @@
     "url": "https://github.com/erimicel/select2-tailwindcss-theme/issues"
   },
   "homepage": "https://github.com/erimicel/select2-tailwindcss-theme#readme",
+  "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
     "sass": "^1.83.1",
     "tailwindcss": "^3.4.17"
   }
