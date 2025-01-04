@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/erimicel/select2-tailwindcss-theme.git"
   },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "select2",
     "theme",
@@ -25,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/erimicel/select2-tailwindcss-theme/issues"
   },
-  "homepage": "https://github.com/erimicel/select2-tailwindcss-theme#readme"
+  "homepage": "https://github.com/erimicel/select2-tailwindcss-theme#readme",
+  "devDependencies": {
+    "sass": "^1.83.1",
+    "tailwindcss": "^3.4.17"
+  }
 }
