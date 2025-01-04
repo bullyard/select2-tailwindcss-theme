@@ -1,14 +1,14 @@
 # select2-tailwindcss-theme
 
-Links
+NPM Links
 
 [Select2](https://github.com/select2/select2) v4 theme for TailwindCSS v3.4
 
 ## Live demo
 
-## 📦 Installation
+Link
 
-1. Install the package:
+## 📦 Installation
 
 Install the package and ensure you have TailwindCSS installed in your project:
 
@@ -30,7 +30,7 @@ import 'tailwind-theme-extension/dist/select2-tailwindcss-theme.min.css'; // Min
 
 ```js
 $('select').select2({
-    theme: 'tailwindcss-3',
+  theme: 'tailwindcss-3',
 });
 ```
 
