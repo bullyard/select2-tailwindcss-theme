@@ -1,0 +1,49 @@
+/* Multiple selection */
+.select2-container--tailwindcss-3 .select2-selection--multiple {
+  @apply min-h-[2.25rem] rounded-md border border-gray-300 bg-white py-1 px-2 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500;
+}
+
+/* Multiple selection list */
+.select2-container--tailwindcss-3 .select2-selection--multiple .select2-selection__rendered {
+  @apply inline float-left;
+}
+
+/* Multiple selection choices */
+.select2-container--tailwindcss-3 .select2-selection--multiple .select2-selection__choice {
+  @apply m-1 inline-flex items-center rounded-md bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800;
+}
+
+/* Remove button */
+.select2-container--tailwindcss-3 .select2-selection--multiple .select2-selection__choice__remove {
+  @apply -ml-1 mr-1.5 h-4 w-4 items-center flex justify-center rounded-full text-blue-600 hover:bg-blue-200 hover:text-blue-900;
+}
+
+/* Search field in multiple selection */
+.select2-container--tailwindcss-3 .select2-selection--multiple .select2-search--inline .select2-search__field {
+  @apply h-8 p-0 text-sm placeholder-gray-400 bg-transparent border-0 focus:outline-none focus:ring-0;
+}
+
+/* Disabled state */
+.select2-container--tailwindcss-3.select2-container--disabled .select2-selection--multiple {
+  @apply text-gray-500 cursor-not-allowed bg-gray-50;
+}
+
+/* Clearable state */
+.select2-container--tailwindcss-3 .select2-selection--multiple.select2-selection--clearable {
+  @apply pr-4;
+}
+
+/* Clear button */
+.select2-container--tailwindcss-3 .select2-selection--multiple .select2-selection__clear {
+  @apply absolute top-0 right-0 mt-2 mr-4 font-bold text-gray-400 cursor-pointer hover:text-gray-600;
+}
+
+/* Focus styles for keyboard navigation */
+.select2-container--tailwindcss-3.select2-container--focus .select2-selection--multiple {
+  @apply border-blue-500 ring-1 ring-blue-500;
+}
+
+/* Error state */
+.select2-container--tailwindcss-3.select2-container--error .select2-selection--multiple {
+  @apply border-red-500 ring-1 ring-red-500;
+}

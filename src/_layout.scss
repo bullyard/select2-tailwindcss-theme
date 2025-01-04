@@ -1,0 +1,65 @@
+/* Base container */
+.select2-container--tailwindcss-3 {
+  @apply block w-full;
+}
+
+/* Dropdown */
+.select2-container--tailwindcss-3.select2-container--open .select2-dropdown {
+  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm;
+}
+
+/* Dropdown position */
+.select2-container--tailwindcss-3.select2-container--open .select2-dropdown--below {
+  @apply origin-top;
+}
+
+.select2-container--tailwindcss-3.select2-container--open .select2-dropdown--above {
+  @apply origin-bottom;
+}
+
+/* Search box */
+.select2-container--tailwindcss-3 .select2-search--dropdown .select2-search__field {
+  @apply block w-full px-3 py-1.5 text-sm placeholder-gray-400 border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500;
+}
+
+/* Results container */
+.select2-container--tailwindcss-3 .select2-results__options {
+  @apply overflow-auto max-h-60;
+}
+
+/* Option items */
+.select2-container--tailwindcss-3 .select2-results__option {
+  @apply relative py-2 pl-3 text-gray-900 transition-colors duration-150 ease-in-out cursor-default select-none pr-9;
+}
+
+/* Hover state */
+.select2-container--tailwindcss-3 .select2-results__option--highlighted {
+  @apply text-white bg-indigo-600;
+}
+
+/* Selected state */
+.select2-container--tailwindcss-3 .select2-results__option--selected {
+  @apply font-medium text-blue-900 bg-blue-100;
+}
+
+/* Selected with checkmark */
+.select2-container--tailwindcss-3 .select2-results__option--selected::after {
+  @apply absolute inset-y-0 flex items-center text-blue-600 right-3;
+  content: "✓";
+}
+
+/* Group headers */
+.select2-container--tailwindcss-3 .select2-results__group {
+  @apply cursor-default bg-gray-50 px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-gray-700;
+}
+
+/* Loading state */
+.select2-container--tailwindcss-3 .select2-results__option--loading {
+  @apply flex items-center justify-center py-4 text-gray-400;
+}
+
+/* Loading spinner */
+.select2-container--tailwindcss-3 .select2-results__option--loading::after {
+  @apply w-5 h-5 border-2 border-gray-300 rounded-full animate-spin border-t-blue-600;
+  content: '';
+}
