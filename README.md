@@ -1,6 +1,10 @@
 # select2-tailwindcss-theme
 
-NPM Links
+[![GitHub](https://img.shields.io/github/v/release/erimicel/select2-tailwindcss-theme?style=flat-square)](https://github.com/erimicel/select2-tailwindcss-theme)
+[![npm version](https://img.shields.io/npm/v/select2-tailwindcss-theme?style=flat-square)](https://www.npmjs.com/package/select2-tailwindcss-theme)
+[![npm](https://img.shields.io/npm/dm/select2-tailwindcss-theme?label=npm&style=flat-square)](https://www.npmjs.com/package/select2-tailwindcss-theme)
+[![jsdelivr](https://data.jsdelivr.com/v1/package/gh/erimicel/select2-tailwindcss-theme/badge)](https://www.jsdelivr.com/package/gh/erimicel/select2-tailwindcss-theme)
+[![License](https://img.shields.io/github/license/erimicel/select2-tailwindcss-theme?style=flat-square)](LICENSE)
 
 [Select2](https://github.com/select2/select2) v4 theme for [TailwindCSS v3.4](https://tailwindcss.com/), inspired by [select2-bootstrap4-theme](https://github.com/ttskch/select2-bootstrap4-theme)
 
@@ -8,7 +12,24 @@ NPM Links
 
 https://erimicel.github.io/select2-tailwindcss-theme/
 
+## Current issues to be fixed
+
+- [ ] Prepend and Append Styles
+- [ ] Error state
+- [ ] Fix height of multi select box
+- [ ] Fix padding on grouped options
+
 ## 📦 Installation
+
+### CDN
+
+```html
+<!-- Latest -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/erimicel/select2-tailwindcss-theme/dist/select2-tailwindcss-theme.min.css">
+
+<!-- Different version change (x.x.x) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/erimicel/select2-tailwindcss-theme@x.x.x/dist/select2-tailwindcss-theme.min.css">
+```
 
 Install the package and ensure you have TailwindCSS installed in your project:
 
@@ -22,7 +43,7 @@ $ yarn add @erimicel/select-tailwindcss-theme
 
 ## Usage
 
-```bash
+```js
 import 'select-tailwindcss-theme/dist/select2-tailwindcss-theme.css'; // Regular version
 // OR
 import 'tailwind-theme-extension/dist/select2-tailwindcss-theme.min.css'; // Minified version
@@ -38,7 +59,7 @@ $('select').select2({
 
 Update your Tailwind configuration to include the package in the content array:
 
-```bash
+```js
 // tailwind.config.js
 module.exports = {
   content: [
