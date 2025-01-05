@@ -74,7 +74,7 @@
 .field_with_errors .select2-container--tailwindcss-3 .select2-selection,
 select.is-invalid ~ .select2-container--tailwindcss-3 .select2-selection,
 select:invalid ~ .select2-container--tailwindcss-3 .select2-selection {
-  @apply border-red-500 ring-1 ring-red-500;
+  @apply border-red-500 placeholder:text-red-300 text-red-900;
 }
 
 /* Single Selection */
