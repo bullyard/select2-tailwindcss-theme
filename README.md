@@ -15,7 +15,6 @@ https://erimicel.github.io/select2-tailwindcss-theme/
 ## Current issues to be fixed
 
 - [ ] Prepend and Append Styles
-- [ ] Error state
 - [ ] Fix height of multi select box
 
 ## 📦 Installation

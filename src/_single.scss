@@ -42,11 +42,6 @@
   @apply border-blue-500 ring-1 ring-blue-500;
 }
 
-/* Error state */
-.select2-container--tailwindcss-3.select2-container--error .select2-selection--single {
-  @apply border-red-500 ring-1 ring-red-500;
-}
-
 /* RTL Support */
 .select2-container--tailwindcss-3[dir="rtl"] .select2-selection--single .select2-selection__rendered {
   @apply pl-10 pr-3;

@@ -70,6 +70,13 @@
   content: "";
 }
 
+/* Error states */
+.field_with_errors .select2-container--tailwindcss-3 .select2-selection,
+select.is-invalid ~ .select2-container--tailwindcss-3 .select2-selection,
+select:invalid ~ .select2-container--tailwindcss-3 .select2-selection {
+  @apply border-red-500 ring-1 ring-red-500;
+}
+
 /* Single Selection */
 .select2-container--tailwindcss-3 .select2-selection--single {
   @apply relative w-full h-9 py-1.5 pl-3 pr-8 text-left transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded-md cursor-default focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:text-sm;
@@ -112,11 +119,6 @@
 /* Focus styles for keyboard navigation */
 .select2-container--tailwindcss-3.select2-container--focus .select2-selection--single {
   @apply border-blue-500 ring-1 ring-blue-500;
-}
-
-/* Error state */
-.select2-container--tailwindcss-3.select2-container--error .select2-selection--single {
-  @apply border-red-500 ring-1 ring-red-500;
 }
 
 /* RTL Support */
@@ -167,9 +169,4 @@
 /* Focus styles for keyboard navigation */
 .select2-container--tailwindcss-3.select2-container--focus .select2-selection--multiple {
   @apply border-blue-500 ring-1 ring-blue-500;
-}
-
-/* Error state */
-.select2-container--tailwindcss-3.select2-container--error .select2-selection--multiple {
-  @apply border-red-500 ring-1 ring-red-500;
 }

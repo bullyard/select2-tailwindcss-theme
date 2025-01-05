@@ -68,3 +68,12 @@
   @apply w-5 h-5 border-2 border-gray-300 rounded-full animate-spin border-t-blue-600;
   content: '';
 }
+
+/* Error states */
+// Ruby on Rails common error fields
+.field_with_errors .select2-container--tailwindcss-3 .select2-selection,
+// Common select invalid state
+select.is-invalid ~ .select2-container--tailwindcss-3 .select2-selection,
+select:invalid ~ .select2-container--tailwindcss-3 .select2-selection {
+  @apply border-red-500 ring-1 ring-red-500;
+}

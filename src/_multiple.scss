@@ -42,8 +42,3 @@
 .select2-container--tailwindcss-3.select2-container--focus .select2-selection--multiple {
   @apply border-blue-500 ring-1 ring-blue-500;
 }
-
-/* Error state */
-.select2-container--tailwindcss-3.select2-container--error .select2-selection--multiple {
-  @apply border-red-500 ring-1 ring-red-500;
-}
