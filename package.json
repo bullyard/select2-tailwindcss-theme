@@ -7,7 +7,8 @@
     "build": "sass src/select2-tailwindcss-theme.scss dist/select2-tailwindcss-theme.css",
     "build:min": "MINIFY=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme.min.css --verbose",
     "build:plain": "VERBOSE=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme-plain.css --verbose",
-    "build:plain:min": "MINIFY=true VERBOSE=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme-plain.min.css --verbose"
+    "build:plain:min": "MINIFY=true VERBOSE=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme-plain.min.css --verbose",
+    "build:demo": "npx tailwindcss -i ./demo/tailwind.css -o ./demo/css/tailwind.css --minify"
   },
   "repository": {
     "type": "git",
