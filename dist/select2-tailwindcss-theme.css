@@ -168,5 +168,3 @@
 .select2-container--tailwindcss-3.select2-container--error .select2-selection--multiple {
   @apply border-red-500 ring-1 ring-red-500;
 }
-
-/*# sourceMappingURL=select2-tailwindcss-theme.css.map */

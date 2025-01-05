@@ -4,11 +4,12 @@
   "description": "A Select2 theme for Tailwindcss",
   "main": "dist/select2-tailwindcss-theme.css",
   "scripts": {
-    "build": "sass src/select2-tailwindcss-theme.scss dist/select2-tailwindcss-theme.css",
+    "build": "sass src/select2-tailwindcss-theme.scss dist/select2-tailwindcss-theme.css --no-source-map",
     "build:min": "MINIFY=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme.min.css --verbose",
     "build:plain": "VERBOSE=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme-plain.css --verbose",
     "build:plain:min": "MINIFY=true VERBOSE=true npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme-plain.min.css --verbose",
-    "build:demo": "npx tailwindcss -i ./demo/tailwind.css -o ./demo/css/tailwind.css --minify"
+    "build:demo": "cp ./dist/select2-tailwindcss-theme-plain.min.css ./docs/css/ &&npx tailwindcss -i ./docs/tailwind.css -o ./docs/css/tailwind.css --minify",
+    "build:all": "npm run build && npm run build:min && npm run build:plain && npm run build:plain:min && npm run build:demo"
   },
   "repository": {
     "type": "git",

@@ -25,10 +25,10 @@ https://erimicel.github.io/select2-tailwindcss-theme/
 
 ```html
 <!-- Latest -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/erimicel/select2-tailwindcss-theme/dist/select2-tailwindcss-theme.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme/dist/select2-tailwindcss-theme-plain.min.css">
 
-<!-- Different version change (x.x.x) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/erimicel/select2-tailwindcss-theme@x.x.x/dist/select2-tailwindcss-theme.min.css">
+<!-- Different version change (1.0.0) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme@1.0.0/dist/select2-tailwindcss-theme-plain.min.css">
 ```
 
 Install the package and ensure you have TailwindCSS installed in your project:
