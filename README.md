@@ -2,7 +2,7 @@
 
 NPM Links
 
-[Select2](https://github.com/select2/select2) v4 theme for TailwindCSS v3.4
+[Select2](https://github.com/select2/select2) v4 theme for TailwindCSS v3.4, inspired by [select2-bootstrap4-theme](https://github.com/ttskch/select2-bootstrap4-theme)
 
 ## Live demo
 
