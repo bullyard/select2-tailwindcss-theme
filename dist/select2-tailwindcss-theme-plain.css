@@ -168,6 +168,19 @@
   padding-bottom: 0px
 }
 
+/* Input groups */
+.input-group > * + select + .select2-container--tailwindcss-3 .select2-selection{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left-width: 0px
+}
+
+.input-group > .select2-container--tailwindcss-3:not(:last-child) .select2-selection{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right-width: 0px
+}
+
 /* Loading state */
 .select2-container--tailwindcss-3 .select2-results__option--loading{
   display: flex;

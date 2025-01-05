@@ -58,6 +58,15 @@
   @apply px-0 py-0;
 }
 
+/* Input groups */
+.input-group > * + select + .select2-container--tailwindcss-3 .select2-selection {
+  @apply rounded-l-none border-l-0;
+}
+
+.input-group > .select2-container--tailwindcss-3:not(:last-child) .select2-selection {
+  @apply rounded-r-none border-r-0;
+}
+
 /* Loading state */
 .select2-container--tailwindcss-3 .select2-results__option--loading {
   @apply flex items-center justify-center py-4 text-gray-400;
