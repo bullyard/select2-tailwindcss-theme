@@ -44,9 +44,9 @@ $ yarn add @erimicel/select-tailwindcss-theme
 ## Usage
 
 ```js
-import 'select-tailwindcss-theme/dist/select2-tailwindcss-theme.css'; // Regular version
+import 'select2-tailwindcss-theme/dist/select2-tailwindcss-theme.css'; // Regular version
 // OR
-import 'tailwind-theme-extension/dist/select2-tailwindcss-theme.min.css'; // Minified version
+import 'select2-tailwindcss-theme/dist/select2-tailwindcss-theme.min.css'; // Minified version
 ```
 
 ```js
@@ -64,7 +64,7 @@ Update your Tailwind configuration to include the package in the content array:
 module.exports = {
   content: [
     './src/**/*.{html,js}',
-    './node_modules/tailwind-theme-extension/dist/*.css', // Include the package
+    './node_modules/select2-tailwindcss-theme/dist/*.css', // Include the package
   ],
   theme: {
     extend: {},
