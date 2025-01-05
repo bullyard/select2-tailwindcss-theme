@@ -18,24 +18,24 @@ https://erimicel.github.io/select2-tailwindcss-theme/
 
 ## 📦 Installation
 
-### CDN
+### CDN
 
 ```html
 <!-- Latest -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme/dist/select2-tailwindcss-theme-plain.min.css">
 
-<!-- Different version change (1.0.0) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme@1.0.0/dist/select2-tailwindcss-theme-plain.min.css">
+<!-- Different version change (x.x.x) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme@x.x.x/dist/select2-tailwindcss-theme-plain.min.css">
 ```
 
 Install the package and ensure you have TailwindCSS installed in your project:
 
 ```bash
 # npm
-$ npm install @erimicel/select-tailwindcss-theme
+$ npm install select2-tailwindcss-theme
 
 # yarn
-$ yarn add @erimicel/select-tailwindcss-theme
+$ yarn add select2-tailwindcss-theme
 ```
 
 ## Usage
