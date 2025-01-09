@@ -5,7 +5,7 @@
 
 /* Dropdown */
 .select2-container--tailwindcss-3.select2-container--open .select2-dropdown {
-  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm;
+  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
 }
 
 /* Dropdown position */
@@ -29,7 +29,7 @@
 
 /* Option items */
 .select2-container--tailwindcss-3 .select2-results__option {
-  @apply relative py-2 pl-3 text-gray-900 transition-colors duration-150 ease-in-out cursor-default select-none pr-9;
+  @apply relative py-2 pl-3 text-gray-900 transition-colors duration-150 ease-in-out cursor-default select-none pr-9 dark:text-white;
 }
 
 /* Hover state */
@@ -39,7 +39,7 @@
 
 /* Selected state */
 .select2-container--tailwindcss-3 .select2-results__option--selected {
-  @apply font-medium text-blue-900 bg-blue-100;
+  @apply font-medium text-blue-900 bg-blue-100 dark:text-white;
 }
 
 /* Selected with checkmark */
