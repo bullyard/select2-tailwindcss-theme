@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -152,17 +152,24 @@
 
   <script>
     $(function () {
-        $('select').each(function () {
-          $(this).select2({
-            theme: 'tailwindcss-3',
-            width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
-            placeholder: $(this).data('placeholder') || 'Select an option',
-            allowClear: Boolean($(this).data('allow-clear')),
-            closeOnSelect: !$(this).attr('multiple'),
-            tags: Boolean($(this).data('tags')),
-          });
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      document.documentElement.classList.toggle(
+        'dark',
+        localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+      );
+
+      // Select2 init
+      $('select').each(function () {
+        $(this).select2({
+          theme: 'tailwindcss-3',
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          placeholder: $(this).data('placeholder') || 'Select an option',
+          allowClear: Boolean($(this).data('allow-clear')),
+          closeOnSelect: !$(this).attr('multiple'),
+          tags: Boolean($(this).data('tags')),
         });
       });
+    });
   </script>
 
 </body>

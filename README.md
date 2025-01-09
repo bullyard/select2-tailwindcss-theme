@@ -81,8 +81,7 @@ npm install
 Modify the SCSS file in src/.scss. Build the CSS:
 
 ```bash
-npm run build       # Regular CSS with @apply classes
-npm run build:min   # Minified CSS
+npm run build:all   # Build all files and update demo as-well
 ```
 
 ## Contributing
