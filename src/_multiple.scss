@@ -1,6 +1,6 @@
 /* Multiple selection */
 .select2-container--tailwindcss-3 .select2-selection--multiple {
-  @apply min-h-[2.25rem] rounded-md text-base sm:text-sm/6 bg-white py-1.5 px-3 border border-gray-300 cursor-default dark:bg-white/5 dark:text-white dark:border-white/10;
+  @apply min-h-[2.25rem] h-auto rounded-md text-base sm:text-sm/6 bg-white py-1.5 px-3 border border-gray-300 cursor-default dark:bg-white/5 dark:text-white dark:border-white/10;
 }
 
 /* Multiple selection list */
@@ -29,7 +29,11 @@
 
 /* Disabled state */
 .select2-container--tailwindcss-3.select2-container--disabled .select2-selection--multiple {
-  @apply text-gray-500 cursor-not-allowed bg-gray-50;
+  @apply text-gray-500 cursor-not-allowed bg-gray-50 border-gray-200;
+}
+
+.select2-container--tailwindcss-3.select2-container--disabled.select2-container--focus .select2-selection--multiple {
+  @apply ring-0 border-gray-200;
 }
 
 /* Clearable state */
