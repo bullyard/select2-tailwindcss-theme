@@ -5,7 +5,7 @@
 
 /* Dropdown */
 .select2-container--tailwindcss-3.select2-container--open .select2-dropdown {
-  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm;
+  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600;
 }
 
 /* Dropdown position */
@@ -19,7 +19,7 @@
 
 /* Search box */
 .select2-container--tailwindcss-3 .select2-search--dropdown .select2-search__field {
-  @apply block w-full px-3 py-1.5 text-sm placeholder-gray-400 border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500;
+  @apply block w-full px-3 py-1.5 text-base sm:text-sm/6 placeholder-gray-400 border-gray-300 border rounded-md shadow-sm focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:bg-gray-700;
 }
 
 /* Results container */
@@ -29,7 +29,7 @@
 
 /* Option items */
 .select2-container--tailwindcss-3 .select2-results__option {
-  @apply relative py-2 pl-3 text-gray-900 transition-colors duration-150 ease-in-out cursor-default select-none pr-9;
+  @apply relative py-2 pl-3 text-gray-900 transition-colors duration-150 ease-in-out cursor-default select-none pr-9 dark:text-white;
 }
 
 /* Hover state */
@@ -37,14 +37,18 @@
   @apply text-white bg-indigo-600;
 }
 
+.select2-container--tailwindcss-3 .select2-results__option--highlighted::after {
+  @apply text-white #{!important}; 
+}
+
 /* Selected state */
 .select2-container--tailwindcss-3 .select2-results__option--selected {
-  @apply font-medium text-blue-900 bg-blue-100;
+  @apply font-semibold dark:text-white;
 }
 
 /* Selected with checkmark */
 .select2-container--tailwindcss-3 .select2-results__option--selected::after {
-  @apply absolute inset-y-0 flex items-center text-blue-600 right-3;
+  @apply absolute inset-y-0 flex items-center text-indigo-600 right-3;
   content: "✓";
 }
 
@@ -74,15 +78,23 @@
 
 /* Loading spinner */
 .select2-container--tailwindcss-3 .select2-results__option--loading::after {
-  @apply w-5 h-5 border-2 border-gray-300 rounded-full animate-spin border-t-blue-600;
+  @apply w-5 h-5 border-2 border-gray-300 rounded-full animate-spin border-t-indigo-600;
   content: '';
 }
 
 /* Error states */
 // Ruby on Rails common error fields
-.field_with_errors .select2-container--tailwindcss-3 .select2-selection,
+.field_with_errors .select2-container--tailwindcss-3,
 // Common select invalid state
-select.is-invalid ~ .select2-container--tailwindcss-3 .select2-selection,
-select:invalid ~ .select2-container--tailwindcss-3 .select2-selection {
-  @apply border-red-500 placeholder:text-red-300 text-red-900;
+select.is-invalid ~ .select2-container--tailwindcss-3,
+select:invalid ~ .select2-container--tailwindcss-3 {
+  .select2-selection {
+    @apply border-red-500 text-red-900;
+  }
+  .select2-container--focus {
+    @apply ring-red-500 border-red-500 #{!important};
+  }
+  .select2-selection__placeholder {
+    @apply text-red-300;
+  }
 }
