@@ -32,6 +32,11 @@
   @apply relative py-2 pl-3 text-gray-900 transition-colors duration-150 ease-in-out cursor-default select-none pr-9 dark:text-white;
 }
 
+/* Disabled option items */
+.select2-container--tailwindcss-3 .select2-results__option--disabled {
+  @apply text-gray-500 cursor-not-allowed bg-gray-50 border-gray-200 dark:bg-white/10 dark:border-white/5;
+}
+
 /* Hover state */
 .select2-container--tailwindcss-3 .select2-results__option--highlighted {
   @apply text-white bg-indigo-600;
