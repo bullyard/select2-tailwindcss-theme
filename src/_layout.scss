@@ -54,7 +54,7 @@
 
 /* Group headers */
 .select2-container--tailwindcss-3 .select2-results__group {
-  @apply flex cursor-default bg-gray-50 px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-gray-700;
+  @apply flex cursor-default bg-gray-50 px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-gray-700 dark:bg-gray-800 dark:text-gray-300;
 }
 
 /* Group container */

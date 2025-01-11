@@ -67,7 +67,7 @@ module.exports = {
 ```
 
 Enable to dark mode by `dark` class toggle:
-```
+```js
 // tailwind.config.js
 module.exports = {
   // The selector strategy replaced the class strategy in Tailwind CSS v3.4.1.
