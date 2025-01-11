@@ -168,6 +168,23 @@
   color: rgb(255 255 255 / var(--tw-text-opacity, 1))
 }
 
+/* Disabled option items */
+
+.select2-container--tailwindcss-3 .select2-results__option--disabled{
+  cursor: not-allowed;
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity, 1))
+}
+
+.select2-container--tailwindcss-3 .select2-results__option--disabled:where(.dark, .dark *){
+  border-color: rgb(255 255 255 / 0.05);
+  background-color: rgb(255 255 255 / 0.1)
+}
+
 /* Hover state */
 
 .select2-container--tailwindcss-3 .select2-results__option--highlighted{
