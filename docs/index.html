@@ -74,6 +74,14 @@
         </select>
       </div>
 
+      <!-- Single Ajax Select -->
+      <div>
+        <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Example of single ajax select</label>
+        <select data-placeholder="Search for github repos" data-allow-clear="1" data-fetch="https://api.github.com/search/repositories">
+          <option></option>
+        </select>
+      </div>
+
       <!-- Tags Select -->
       <div>
         <label class="block mb-2 text-sm font-medium text-gray-700 dark:text-white">Example of dynamic option creation</label>
@@ -205,15 +213,72 @@
 
       // Select2 init
       $('select').each(function () {
-        $(this).select2({
+        let options = {
           theme: 'tailwindcss-3',
           width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
           placeholder: $(this).data('placeholder') || 'Select an option',
           allowClear: Boolean($(this).data('allow-clear')),
           closeOnSelect: !$(this).attr('multiple'),
           tags: Boolean($(this).data('tags')),
-        });
+        };
+
+        if ($(this).data('fetch')) {
+          options = {
+            ...options,
+            ajax: {
+              url: $(this).data('fetch'),
+              dataType: 'json',
+              delay: 250,
+              data: function (params) {
+                return {
+                  q: params.term, // search term
+                  page: params.page
+                };
+              },
+              processResults: function (data, params) {
+                // parse the results into the format expected by Select2
+                // since we are using custom formatting functions we do not need to
+                // alter the remote JSON data, except to indicate that infinite
+                // scrolling can be used
+                params.page = params.page || 1;
+
+                return {
+                  results: data.items,
+                  pagination: {
+                    more: (params.page * 30) < data.total_count
+                  }
+                };
+              },
+              cache: true
+            },
+            minimumInputLength: 1,
+            templateResult: formatRepo,
+            templateSelection: formatRepoSelection
+          };
+        }
+
+        $(this).select2(options);
       });
+
+      function formatRepo(repo) {
+        if (repo.loading) {
+          return repo.text;
+        }
+
+        var $container = $(
+          "<div class='flex'>" +
+          "<div class='text-base sm:text-sm/6 dark:text-white select2-result-repository__title'></div>" +
+          "</div>"
+        );
+
+        $container.find(".select2-result-repository__title").text(repo.full_name);
+
+        return $container;
+      }
+
+      function formatRepoSelection(repo) {
+        return repo.full_name || repo.text;
+      }
     });
   </script>
 
