@@ -13,8 +13,8 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,container-queries"></script>
 
   <link href="css/tailwind.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme@1.2.3/dist/select2-tailwindcss-theme-plain.min.css" rel="stylesheet">
-  <link href="css/select2-tailwindcss-theme-plain.min.css?v=1.2.3" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/erimicel/select2-tailwindcss-theme@1.2.4/dist/select2-tailwindcss-theme-plain.min.css" rel="stylesheet">
+  <link href="css/select2-tailwindcss-theme-plain.min.css?v=1.2.4" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
   <script>
@@ -215,7 +215,7 @@
       $('select').each(function () {
         let options = {
           theme: 'tailwindcss-3',
-          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-100') ? '100%' : 'style',
+          width: $(this).data('width') ? $(this).data('width') : $(this).hasClass('w-full') ? '100%' : 'style',
           placeholder: $(this).data('placeholder') || 'Select an option',
           allowClear: Boolean($(this).data('allow-clear')),
           closeOnSelect: !$(this).attr('multiple'),
