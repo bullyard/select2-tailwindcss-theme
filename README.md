@@ -12,6 +12,12 @@
 
 https://erimicel.github.io/select2-tailwindcss-theme/
 
+## Repo and live demo for tailwindcss v4 theme
+
+Demo: https://erimicel.github.io/select2-tailwindcss-v4-theme/
+
+Repo: https://github.com/erimicel/select2-tailwindcss-v4-theme
+
 ## 📦 Installation
 
 ### CDN
