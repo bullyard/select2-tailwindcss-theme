@@ -6,7 +6,7 @@
 
 /* Dropdown */
 .select2-container--tailwindcss-3.select2-container--open .select2-dropdown {
-  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600;
+  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg max-h-60 ring-1 ring-black/5 ring-opacity-5 focus:outline-none sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-600 dark:focus:border-blue-600;
 }
 
 /* Dropdown position */
@@ -20,11 +20,11 @@
 
 /* Search box */
 .select2-container--tailwindcss-3 .select2-search--dropdown .select2-search__field {
-  @apply block w-full px-3 py-1.5 text-base sm:text-sm/6 placeholder-gray-400 border-gray-300 border rounded-md shadow-sm focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:bg-gray-700;
+  @apply block w-full px-3 py-1.5 text-base sm:text-sm/6 placeholder-gray-400 border-gray-300 border rounded-md shadow-sm focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600 dark:bg-gray-700;
 }
 
 /* Results container */
-.select2-container--tailwindcss-3 .select2-results__options {
+.select2-container--tailwindcss-3 .select2-results__options:not(.select2-results__options--nested) {
   @apply overflow-auto max-h-60;
 }
 
@@ -40,7 +40,7 @@
 
 /* Hover state */
 .select2-container--tailwindcss-3 .select2-results__option--highlighted {
-  @apply text-white bg-indigo-600;
+  @apply text-white bg-blue-600;
 }
 
 .select2-container--tailwindcss-3 .select2-results__option--highlighted::after {
@@ -54,7 +54,7 @@
 
 /* Selected with checkmark */
 .select2-container--tailwindcss-3 .select2-results__option--selected::after {
-  @apply absolute inset-y-0 flex items-center text-indigo-600 right-3;
+  @apply absolute inset-y-0 flex items-center text-blue-600 right-3;
   content: "✓";
 }
 
@@ -84,7 +84,7 @@
 
 /* Loading spinner */
 .select2-container--tailwindcss-3 .select2-results__option--loading::after {
-  @apply w-5 h-5 border-2 border-gray-300 rounded-full animate-spin border-t-indigo-600;
+  @apply w-5 h-5 border-2 border-gray-300 rounded-full animate-spin border-t-blue-600;
   content: "";
 }
 
@@ -147,7 +147,7 @@ select:invalid ~ .select2-container--tailwindcss-3 .select2-selection__placehold
 
 /* Focus styles for keyboard navigation */
 .select2-container--tailwindcss-3.select2-container--focus .select2-selection--single {
-  @apply ring-1 ring-indigo-600 border-indigo-600 outline-none;
+  @apply ring-1 ring-blue-600 border-blue-600 outline-none;
 }
 
 /* RTL Support */
@@ -167,12 +167,12 @@ select:invalid ~ .select2-container--tailwindcss-3 .select2-selection__placehold
 
 /* Multiple selection choices */
 .select2-container--tailwindcss-3 .select2-selection--multiple .select2-selection__choice {
-  @apply inline-flex items-center rounded-md bg-indigo-100 px-2.5 py-0.5 text-base sm:text-sm/6 font-medium text-indigo-800;
+  @apply inline-flex items-center rounded-md bg-blue-100 px-2.5 py-0.5 text-base sm:text-sm/6 font-medium text-blue-800;
 }
 
 /* Remove button */
 .select2-container--tailwindcss-3 .select2-selection--multiple .select2-selection__choice__remove {
-  @apply -ml-1 mr-1.5 h-4 w-4 pb-[0.10rem] items-center flex justify-center rounded-full text-indigo-600 hover:bg-blue-200 hover:text-indigo-900;
+  @apply -ml-1 mr-1.5 h-4 w-4 pb-[0.10rem] items-center flex justify-center rounded-full text-blue-600 hover:bg-blue-200 hover:text-blue-900;
 }
 
 /* Search field in multiple selection */
@@ -205,5 +205,5 @@ select:invalid ~ .select2-container--tailwindcss-3 .select2-selection__placehold
 
 /* Focus styles for keyboard navigation */
 .select2-container--tailwindcss-3.select2-container--focus .select2-selection--multiple {
-  @apply ring-1 ring-indigo-600 border-indigo-600 outline-none;
+  @apply ring-1 ring-blue-600 border-blue-600 outline-none;
 }
